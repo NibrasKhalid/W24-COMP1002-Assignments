@@ -1,0 +1,154 @@
+body {
+    background-image: url('Assignment-Image/background-2068211.jpg');    /* Set the background image for the body */
+    background-size: cover;                                               /* Ensure the background image covers the entire viewport */
+    background-repeat: no-repeat;                                         /* Ensure the background image does not repeat */
+    margin: 0%;
+    padding: 0%; 
+}
+
+header {                                      /* Header styling */
+    display: flex;                                  /* Use flexbox */
+    flex-flow: row wrap;                            /* Arrange items in a row, wrap if needed */
+    justify-content: start;                         /* Align items to the start of the flex container */
+    background-color: rgb(78,136,143);            /* Set header background color */
+}
+
+
+.logo {                                       /* Logo styling */                                     
+    width: 400px;                                   /* Set width */
+    height: auto;                                   /* Set height */
+    margin-top: 0;                                  /* Set margin */
+    justify-content: left;                          /* Align content to the left */
+    align-content: flex-start;                      /* Align content to the start of the flex container */
+    align-self: center;
+}
+
+
+.navbar {                                     /* Navigation bar styling */                   
+    display: flex;                                  /* Use flexbox */
+    flex-flow: row wrap;                            /* Arrange items in a row, wrap if needed */
+    align-items: center;                            /* Align items vertically centered */
+    justify-content: space-around;                  /* Evenly distribute items along the main axis */
+    margin: auto;                                   /* Set margin */
+    padding: 0px 20px 0px 20px;                     /* Set padding */
+    gap: 2.5rem;                                    /* Set gap between items */
+    height: auto;                                  /* Set height */
+    width: auto;                             /* Set width to fit content */
+}
+
+
+.menu, .order, .contact {                     /* Specific styling for Menu order and contact */
+    color: rgb(56,43,52);                         /* Set text color */
+    margin-right: 20px;                             /* Set right margin */
+    text-decoration: none;                          /* Remove underline */
+    font-weight: 600;                               /* Set font weight */
+}
+
+
+.navbar a:hover {                             /* Hover effect for navigation bar items */                           
+    color: #fff;                                  /* Set text color */
+    font-weight: 600;                               /* Set font weight */
+}
+
+#form {                          
+    width: auto;                                                         /* Set width to auto */
+    display: flex;                                                       /* Use flexbox for layout */
+    flex-flow: column wrap;                                              /* Arrange items in a column and wrap if necessary */
+    justify-content: center;                                             /* Center content vertically */
+    background-color: #fff;                                            /* Background color */
+    margin: 20px 500px;                                                  /* Set margin */
+    border-radius: 15px;                                                 /* Border radius */
+    box-shadow: 0 10px 25px 0 rgb(0, 0, 0);                            /* Add box shadow */
+    padding: 10px;                                                       /* Add padding */
+}
+
+.text-area, textarea {
+    width: 100%;                                                         /* Set width to 100% */
+    padding: 10px;                                                       /* Add padding */
+    border: 1px solid #ccc;                                            /* Add border */
+    border-radius: 5px;                                                  /* Border radius */
+    box-sizing: border-box;                                              /* Include padding and border in the element's total width and height */
+}
+
+fieldset {                      
+    margin: 10px;                                                        /* Set margin */
+    border-color: rgb(78,136,143);                                     /* Border color */
+    border-radius: 2px;                                                  /* Border radius */
+    border-width: 3px;                                                   /* Border width */
+    box-shadow: none;                                                    /* Remove box shadow */
+}
+
+legend {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;   /* Set font family */
+    color: rgb(78,136,143);                                                   /* Text color */
+    font-weight: bold;                                                          /* Set font weight */
+}
+
+button {
+    display: inline-block;                                                /* Display as inline block */
+    justify-content: left;                                                /* Align content to the left */
+    text-decoration: none;                                                /* Remove text decoration */
+    font-size: 16px;                                                       /* Set font size */
+    font-weight: 600;                                                      /* Set font weight */
+    border: 0;                                                             /* Remove border */
+    border-radius: 16px;                                                   /* Border radius */
+    background-color:rgb(78,136,143);                                    /* Background color */
+    color: #fff;                                                         /* Text color */
+    padding: 14px 25px;                                                    /* Padding */
+    cursor: pointer;                                                       /* Set cursor to pointer */
+    transition: 0.5s;                                                      /* Add transition */
+    margin: 20px;                                                          /* Set margin */
+    text-align: center;                                                    /* Align text to center */
+}
+
+button:hover {                           
+    box-shadow: 0 10px 25px 0 rgb(0, 0, 0);                                /* Add box shadow */
+    color: #fff;                                                           /* Text color */
+    background-color: rgb(56,43,52);                                       /* Background color */
+    font-weight: 600;                                                        /* Set font weight */
+}
+
+footer {                                        /* Footer styling */
+    background-color: rgb(56,43,52);                /* Set background color */
+    color: white;                                   /* Set text color */
+    font-family:Arial, Helvetica, sans-serif;         /* Set font family */
+    text-align: center;                               /* Align text to the center */
+    padding: 20px;                                    /* Set padding */
+}
+
+
+footer #privacy {                               /* Privacy policy line styling */
+    font-size: small;                                 /* Set font size */
+    font-weight: 400;                                 /* Set font weight */
+}
+
+@media all and (max-width: 800px){              /* Media query for screens with a maximum width of 800px */
+                   
+    .navbar {                                   /* Adjustments for navbar */
+        flex-direction: row;                            /* Set flex direction to row */
+        align-items: center;                            /* Align items vertically centered */
+    }
+    
+    .navbar a {                                 /* Adjustments for navbar links */
+        margin: 20px;                                    /* Set margin for navbar links */
+        display: block;                                  /* Display  as block element */
+    }
+
+    body {                                      /* This style is applied to all body elements */
+        display: flex;                                  /* Make the body a flex container */
+        flex-direction: column;                         /* Arrange flex items vertically */
+        justify-content: space-around;                  /* Space items evenly vertically */
+    }
+
+    #form {                                     /* This style is applied to the element with the ID 'form' */
+        display: block;                                 /* Display the form as a block-level element */
+        margin: auto;                                   /* Center the form horizontally on the page */
+        width: 90%;                                     /* Set the width of the form to 90% of its containing element */
+    }
+    
+    footer {                                    /* Adjustments for footer */
+        position: static;                               /* Set position to static */
+        margin-top: 20px;                               /* Set top margin */
+    }
+}
+

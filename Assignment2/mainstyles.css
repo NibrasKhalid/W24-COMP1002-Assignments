@@ -1,0 +1,257 @@
+body {                                        /* basic styling for body of the page */
+    margin: 0;                                      /* Set margin to 0 */
+    color: rgb(56,43,52);                         /* Set text color */
+    font-weight: 600;                               /* Set font weight */
+    background-color:antiquewhite;                /* Set background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;              /* Set font family */
+}
+
+
+header {                                      /* Header styling */
+    display: flex;                                  /* Use flexbox */
+    flex-flow: row wrap;                            /* Arrange items in a row, wrap if needed */
+    justify-content: start;                         /* Align items to the start of the flex container */
+    background-color: rgb(78,136,143);            /* Set header background color */
+}
+
+
+.logo {                                       /* Logo styling */                                     
+    width: 400px;                                   /* Set width */
+    height: auto;                                   /* Set height */
+    margin-top: 0;                                  /* Set margin */
+    justify-content: left;                          /* Align content to the left */
+    align-content: flex-start;                      /* Align content to the start of the flex container */
+    align-self: center;
+}
+
+
+.navbar {                                     /* Navigation bar styling */                   
+    display: flex;                                  /* Use flexbox */
+    flex-flow: row wrap;                            /* Arrange items in a row, wrap if needed */
+    align-items: center;                            /* Align items vertically centered */
+    justify-content: space-around;                  /* Evenly distribute items along the main axis */
+    margin: auto;                                   /* Set margin */
+    padding: 0px 20px 0px 20px;                     /* Set padding */
+    gap: 2.5rem;                                    /* Set gap between items */
+    height: auto;                                  /* Set height */
+    width: auto;                             /* Set width to fit content */
+}
+
+
+.menu, .order, .contact {                     /* Specific styling for Menu order and contact */
+    color: rgb(56,43,52);                         /* Set text color */
+    margin-right: 20px;                             /* Set right margin */
+    text-decoration: none;                          /* Remove underline */
+    font-weight: 600;                               /* Set font weight */
+}
+
+
+.navbar a:hover {                             /* Hover effect for navigation bar items */                           
+    color: #fff;                                  /* Set text color */
+    font-weight: 600;                               /* Set font weight */
+}
+
+
+main #welcome {                               /* Basic styling for Welcome line in main tag */
+    font-size: 4vw;                                /* Set font size */
+    font-weight: bold;                               /* Set font weight */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                  /* Set font family */
+    text-align: center;                             /* Align text to the center */
+    padding-bottom: 0;                              /* Set bottom padding */
+    margin-bottom: 0;                               /* Set bottom margin */
+}
+
+
+main #line {                                 /* Basic styling for tag-line in main tag */
+    font-size: 1.5vw;                              /* Set font size */
+    font-weight: bold;                              /* Set font weight */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                   /* Set font family */
+    text-align: center;                             /* Align text to the center */
+    padding-top: 0;                                 /* Set top padding */
+    padding-bottom: 5%;                             /* Set bottom padding */
+}
+
+
+main #our-pizza {                            /* Basic styling for Our Pizza's in main tag */
+    font-size: 1.5rem;                              /* Set font size */
+    font-weight: bold;                              /* Set font weight */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                   /* Set font family */
+    padding: 0 15px 0 20px;                         /* Set padding */
+}
+
+
+.cards {                                     /* Styling for pizza cards */
+    padding: 0 15px 0 15px;                         /* Set padding */
+    display: flex;                                  /* Use flexbox */
+    flex-direction: row;                            /* Arrange items in a row */
+    flex-wrap: wrap;                                /* Allow items to wrap */
+    justify-content: space-evenly;                  /* Evenly distribute items along the main axis */
+}
+
+
+img {                                        /* Styling for pizza images */
+    margin-top: 20px;                               /* Set top margin */
+    width: 90%;                                     /* Set width */
+    height: 90%;                                    /* Set height */
+}
+
+
+.pizza1 .body img {                          /* Specific pizza1's image styling */
+    width: 100%;                                    /* Set width */
+    height: 100%;                                   /* Set height */
+    margin-top: 0;                                  /* Set top margin */
+}
+
+
+.pizza1,.pizza2, .pizza3  {                  /* Styling for pizza cards */
+    display: flex;                                  /* Use flexbox */
+    flex-direction: column;                         /* Arrange items in a column */
+    flex: 1;                                        /* Set flex value */
+    font-size: 1.5rem;                              /* Set font size */
+    text-align: center;                             /* Align text to the center */
+    justify-content: space-between;                 /* Evenly distribute space between items */
+    margin: 0 5px 0 5px;                            /* Set margins */
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0);}
+
+
+.pizza1:hover, .pizza2:hover, .pizza3:hover {   /* Hover effect for pizza cards */
+    box-shadow: 0 10px 25px 0 rgb(0, 0, 0);                         /* Apply box shadow */
+    background-color:antiquewhite;                  /* Set background color */
+    transform: scale(1.01);                            /* Apply scale transformation */
+    transition: 0.3s;                                 /* Set transition duration */
+    cursor: pointer ;                                 /* Set cursor */
+}
+
+
+#description {                                  /* Pizza description paragraph styling */
+    font-size: small;                                   /* Set font size */
+    text-align: justify;                                /* Justify text */
+    padding: 0 8px 0 8px;                               /* Set padding */
+}
+
+
+.cards #price {                                 /* Pizza Price */
+    font-size: x-large;                                 /* Set font size */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;                       /* Set font family */
+    text-align: left;                                   /* Align text to the left */
+    padding-left: 8px;                                  /* Set left padding */
+}
+
+
+.button {                                       /* 'Place your order' button styling */                
+    text-align: center;                                 /* Align text to the center */
+}
+
+.button a {
+    display: inline-block;                              /* Display as inline block */
+    justify-content: center;                            /* Align content to the center */
+    text-decoration: none;                              /* Remove underline */
+    font-size: 16px;                                    /* Set font size */
+    font-weight: 600;                                   /* Set font weight */  
+    border: 0;                                          /* Remove border */
+    border-radius: 16px;                                /* Set border radius */
+    background-color:rgb(78,136,143);                 /* Set background color */
+    color: #fff;                                      /* Set text color to white*/
+    padding: 14px 25px;                                 /* Set padding */
+    cursor: pointer;                                    /* Set cursor to pointer*/
+    transition: all 0.5s;                               /* Set transition duration */
+    margin: 100px;                                      /* Set margin */
+    box-shadow: 0 10px 25px 0 rgb(0, 0, 0);
+}
+
+
+.button a:hover {                               /* Hover effect for buttons */
+    box-shadow: 0 10px 25px 0 rgb(0, 0, 0);    color: #fff;         /* Set text color */
+    background-color: rgb(56,43,52);                                  /* Set background color */
+    font-weight: 600;                                                   /* Set font weight */   
+}
+
+
+.button a span {                                /* Span styling for button animation */
+    cursor: pointer;                                    /* Set cursor */
+    position: relative;                                 /* Set position */
+    transition: 0.5s;                                   /* Set transition duration */
+}
+
+
+.button a span:after {                          /* Button arrow animation */
+    content: '\00bb';                                   /*arrow appears when hovering */
+    position: absolute;                                 /* Set position */
+    opacity: 0;                                         /* Set opacity */
+    top: 0;                                             /* Set top position */
+    right: -20px;                                       /* Set right position */
+    transition: 0.5s;                                   /* Set transition duration */
+}
+  
+
+.button a:hover span {                          /* Button hover effect */
+    padding-right: 25px;                                /* Set right padding */
+}
+  
+.button a:hover span:after {
+    opacity: 1;                                         /* Set opacity */
+    right: 0;                                           /* Set right position */
+}
+
+
+footer {                                        /* Footer styling */
+    background-color: rgb(56,43,52);                /* Set background color */
+    color: white;                                   /* Set text color */
+    font-family:Arial, Helvetica, sans-serif;         /* Set font family */
+    text-align: center;                               /* Align text to the center */
+    padding: 20px;                                    /* Set padding */
+}
+
+
+footer #privacy {                               /* Privacy policy line styling */
+    font-size: small;                                 /* Set font size */
+    font-weight: 400;                                 /* Set font weight */
+}
+
+
+@media all and (max-width: 800px){              /* Media query for screens with a maximum width of 800px */
+
+                                                        
+    .navbar {                                   /* Adjustments for navbar */
+        flex-direction: row;                            /* Set flex direction to row */
+        align-items: center;                            /* Align items vertically centered */
+    }
+
+    
+    .navbar a {                                 /* Adjustments for navbar links */
+        margin: 20px;                                   /* Set margin for navbar links */
+    }
+
+    
+    .cards {                                    /* Adjustments for cards */
+        padding: 0 15px 0 15px;                         /* Set padding */
+        display: flex;                                  /* Use flexbox */
+        flex-direction: column;                         /* Arrange items in a column */
+        flex-wrap: wrap;                                /* Allow items to wrap */
+        align-items: center;                            /* Align items vertically centered */
+    }
+
+    
+    .pizza1, .pizza2, .pizza3 {                 /* Adjustments for pizza cards */
+        display: flex;                                  /* Use flexbox */
+        flex-direction: column;                         /* Arrange items in a column */
+        flex: 1;                                        /* Set flex value */
+        font-size: 1.5rem;                              /* Set font size */
+        text-align: center;                             /* Align text to the center */
+        justify-content: space-between;                 /* Evenly distribute space between items */
+        margin: 0 5px 20px 5px;                         /* Set margins */
+        box-shadow: 0 5px 10px 0 rgb(0, 0, 0);        /* Apply box shadow */
+    }
+
+    
+    .button {                                   /* Adjustments for button */
+        margin-top: 20px;                               /* Set top margin */
+    }
+
+    
+    footer {                                    /* Adjustments for footer */
+        position: static;                               /* Set position to static */
+        margin-top: 20px;                               /* Set top margin */
+    }
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>                 <!--file type-->
+<html lang="en">                <!--language used in program-->
+<head>                          <!--contains the metadata for the file-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order delicious pizzas online. Customize your toppings and enjoy quick delivery to your doorstep."> <!--gives the preview of the content available on website-->
+    <meta name="keywords" content="pizza, order, form, online, delivery, toppings, customize">                      <!--shows up on web's search list when certain words are used-->
+    <title>Pizza Order Form</title>                                     <!--displays the name of the tab-->
+    <link rel="stylesheet" href="orderstyles.css">                      <!--links it to the stylesheet to apply css styles-->
+</head>                         <!--closing tag for head-->
+
+<body>
+    
+    <header>        <!-- Header -->
+
+        <img class="logo" src="Assignment-Image/logo-transparent-png.png" alt="Vibrizzles-logo">       <!-- Logo for the website -->
+
+        <nav class="navbar">                                    <!-- Navigation bar section -->
+            <a href="index.html" class="menu">Menu</a>                   <!-- Menu link -->
+            <a href="order_form.html" class="order">Order</a>   <!-- Order link -->
+            <a href="#" class="contact">Contact Us</a>          <!-- Contact link -->
+        </nav>
+
+    </header>
+
+    <form id="form">
+
+        <fieldset class="contact-info">         <!-- Contact Information form -->
+    
+            <legend>Contact Information</legend>    <!-- Title for the Contact Information form -->
+    
+            <p class="name">Name:</p>
+            <input type="myname=" class="text-area" id="name">              <!-- input field for the user's name -->
+    
+            <p class="email">Email:</p>
+            <input type="email" class="text-area" id="email">         <!-- input field for the user's email address -->
+    
+            <p class="number">Phone Number:</p>     
+            <input type="text" class="text-area" id="number">         <!-- input field for the user's phone number -->
+
+        </fieldset>
+
+        <fieldset class="pizza-det">                  <!-- Start of Pizza Details fieldset -->
+            
+            <legend>Pizza Details</legend>              <!-- Title for Pizza Details section -->
+ 
+            <p class="number">Quantity:</p>     
+            <input type="number" class="text-area" id="number">         <!-- input field for the quantity -->
+
+            <p class="type">Pizza Type:</p>             <!-- Label for selecting pizza type -->
+            <select class="text-area" name="type">                        <!-- Dropdown menu for selecting pizza type -->
+                <option value="Pepperoni">Pepperoni</option>            <!-- Option for Pepperoni pizza type -->
+                <option value="Cheese">Cheese</option>                  <!-- Option for Cheese pizza type -->
+                <option value="Vegetarian">Vegetarian</option>          <!-- Option for Vegetarian pizza type -->
+            </select>
+ 
+            <p class="crust">Crust:</p>                     <!-- selecting crust type -->
+            <select class="text-area" name="crust">                           <!-- Dropdown menu for selecting crust type -->
+                <option value="thin">Thin Crust</option>    <!-- for Thin Crust crust type -->
+                <option value="deep">Deep Dish</option>     <!-- for Deep Dish crust type -->
+                <option value="hand">Hand Tossed</option>   <!-- for Hand Tossed crust type -->
+            </select>
+ 
+            <p class="size">Size:</p>                   <!-- selecting pizza size -->
+            <div id="size">                             <!-- Container for pizza size radio buttons -->
+                <input type="radio" name="Answer" value="small">        <!-- Radio button for Small size -->
+                <label for="Answer">Small</label><br>                  
+                <input type="radio" name="Answer" value="medium">       <!-- Radio button for Medium size -->
+                <label for="Answer">Medium</label><br>                
+                <input type="radio" name="Answer" value="large">        <!-- Radio button for Large size -->
+                <label for="Answer">Large</label><br>                   
+            </div>
+ 
+            <p class="toppings">Toppings:</p>           <!-- selecting toppings -->
+            <div id="toppings">                         <!-- Container for toppings checkboxes -->
+                <input type="checkbox" name="Answer" value="olive">     <!-- Checkbox for Olive topping -->
+                <label for="Answer">Olive</label><br>                   
+                <input type="checkbox" name="Answer" value="mushroom">  <!-- Checkbox for Mushroom topping -->
+                <label for="Answer">Mushroom</label><br>                
+                <input type="checkbox" name="Answer" value="pepperoni"> <!-- Checkbox for Pepperoni topping -->
+                <label for="Answer">Pepperoni</label><br>               
+                <input type="checkbox" name="Answer" value="jalapeno">  <!-- Checkbox for Jalapeno topping -->
+                <label for="Answer">Jalapeno</label><br>                
+            </div>
+ 
+            <p class="instructions">Additional Instructions:</p>        <!-- Label for Additional Instructions textarea -->
+            <textarea></textarea>        <!--Textarea for entering Additional Instructions-->
+
+        </fieldset>                            <!-- End of Pizza Details fieldset -->
+ 
+        <fieldset class="delivery-opt">        <!-- Start of Delivery Options fieldset -->
+
+            <legend>Delivery Options</legend>   <!-- Title for Delivery Options section -->
+ 
+            <p class="address">Delivery Address:</p>                    <!-- Label for Delivery Address input -->
+            <input type="text" class="text-area" name="address">                          <!-- Input field for Delivery Address -->
+ 
+            <p class="time">Preferred Delivery Time:</p>                <!-- Label for Preferred Delivery Time input -->
+            <input type="time" class="text-area" id="time">                               <!-- Input field for Preferred Delivery Time -->
+
+        </fieldset>                            <!-- End of Delivery Options fieldset -->
+
+        <button type="submit" class="place-order">Place Order</button>                                <!-- Button to submit the order -->
+
+    </form>
+
+    <footer>                                <!-- Footer -->
+        
+        <p class="footer">&copy; 2024 Vibrizzles. All Rights Reserved</p>
+        <p id="privacy">Privacy Policy</p>
+
+    </footer>
+
+</body>
+</html>
