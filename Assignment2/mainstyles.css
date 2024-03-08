@@ -31,7 +31,7 @@ header {                                      /* Header styling */
     align-items: center;                            /* Align items vertically centered */
     justify-content: space-around;                  /* Evenly distribute items along the main axis */
     margin: auto;                                   /* Set margin */
-    padding: 0px 20px 0px 20px;                     /* Set padding */
+    padding: 0px 20px;                              /* Set padding */
     gap: 2.5rem;                                    /* Set gap between items */
     height: auto;                                  /* Set height */
     width: auto;                             /* Set width to fit content */
@@ -81,7 +81,7 @@ main #our-pizza {                            /* Basic styling for Our Pizza's in
 
 
 .cards {                                     /* Styling for pizza cards */
-    padding: 0 15px 0 15px;                         /* Set padding */
+    padding: 0 15px;                         /* Set padding */
     display: flex;                                  /* Use flexbox */
     flex-direction: row;                            /* Arrange items in a row */
     flex-wrap: wrap;                                /* Allow items to wrap */
@@ -110,7 +110,7 @@ img {                                        /* Styling for pizza images */
     font-size: 1.5rem;                              /* Set font size */
     text-align: center;                             /* Align text to the center */
     justify-content: space-between;                 /* Evenly distribute space between items */
-    margin: 0 5px 0 5px;                            /* Set margins */
+    margin: 0 5px;                            /* Set margins */
     box-shadow: 0 5px 10px 0 rgb(0, 0, 0);}
 
 
@@ -211,9 +211,30 @@ footer #privacy {                               /* Privacy policy line styling *
 
 @media all and (max-width: 800px){              /* Media query for screens with a maximum width of 800px */
 
+    header {                                      /* Header styling */
+        display: flex;                                  /* Use flexbox */
+        flex-flow: column wrap;                            /* Arrange items in a column, wrap if needed */
+        background-color: rgb(78,136,143);            /* Set header background color */
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo {
+        width: 100%;                                   /* Set width */
+        height: auto;                                   /* Set height */
+        margin-top: 0;                                  /* Set margin to 0*/
+        justify-content: center;                          /* Align content to the center */
+        
+    }
                                                         
     .navbar {                                   /* Adjustments for navbar */
-        flex-direction: row;                            /* Set flex direction to row */
+        flex-direction: column;                            /* Set flex direction to row */
         align-items: center;                            /* Align items vertically centered */
     }
 
@@ -224,10 +245,9 @@ footer #privacy {                               /* Privacy policy line styling *
 
     
     .cards {                                    /* Adjustments for cards */
-        padding: 0 15px 0 15px;                         /* Set padding */
+        padding: 0 15px;                         /* Set padding */
         display: flex;                                  /* Use flexbox */
-        flex-direction: column;                         /* Arrange items in a column */
-        flex-wrap: wrap;                                /* Allow items to wrap */
+        flex-flow: column wrap;                          /* Arrange items in a column, wrap if needed */
         align-items: center;                            /* Align items vertically centered */
     }
 
