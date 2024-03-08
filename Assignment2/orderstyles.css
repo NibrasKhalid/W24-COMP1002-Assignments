@@ -30,7 +30,7 @@ header {                                      /* Header styling */
     align-items: center;                            /* Align items vertically centered */
     justify-content: space-around;                  /* Evenly distribute items along the main axis */
     margin: auto;                                   /* Set margin */
-    padding: 0px 20px 0px 20px;                     /* Set padding */
+    padding: 0px 20px;                     /* Set padding */
     gap: 2.5rem;                                    /* Set gap between items */
     height: auto;                                  /* Set height */
     width: auto;                             /* Set width to fit content */
@@ -85,8 +85,8 @@ legend {
 }
 
 button {
-    display: inline-block;                                                /* Display as inline block */
-    justify-content: left;                                                /* Align content to the left */
+    display: flex;                                                /* Display as flex */
+    justify-content: center;                                                /* Align content to the center */
     text-decoration: none;                                                /* Remove text decoration */
     font-size: 16px;                                                       /* Set font size */
     font-weight: 600;                                                      /* Set font weight */
@@ -123,25 +123,39 @@ footer #privacy {                               /* Privacy policy line styling *
 }
 
 @media all and (max-width: 800px){              /* Media query for screens with a maximum width of 800px */
-                   
+
+    body {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    header {                                      /* Header styling */
+        display: flex;                                  /* Use flexbox */
+        flex-flow: column wrap;                            /* Arrange items in a column, wrap if needed */
+        background-color: rgb(78,136,143);            /* Set header background color */
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;                                   /* Set width */
+        height: auto;                                   /* Set height */
+        margin-top: 0;                                  /* Set margin to 0*/
+        justify-content: center;                          /* Align content to the center */
+        
+    }
+    
     .navbar {                                   /* Adjustments for navbar */
-        flex-direction: row;                            /* Set flex direction to row */
+        flex-direction: column;                            /* Set flex direction to column */
         align-items: center;                            /* Align items vertically centered */
     }
     
     .navbar a {                                 /* Adjustments for navbar links */
         margin: 20px;                                    /* Set margin for navbar links */
-        display: block;                                  /* Display  as block element */
-    }
-
-    body {                                      /* This style is applied to all body elements */
-        display: flex;                                  /* Make the body a flex container */
-        flex-direction: column;                         /* Arrange flex items vertically */
-        justify-content: space-around;                  /* Space items evenly vertically */
     }
 
     #form {                                     /* This style is applied to the element with the ID 'form' */
-        display: block;                                 /* Display the form as a block-level element */
+        display: flex;                                 /* Display the form as a flexbox */
+        flex-direction: column;                        /* Set flex direction to column */
         margin: auto;                                   /* Center the form horizontally on the page */
         width: 90%;                                     /* Set the width of the form to 90% of its containing element */
     }
