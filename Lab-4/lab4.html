@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <style>
+        span {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab 4</h1>
+    <p id="result"></p>
+
+    <script>
+        const output = document.getElementById("result");
+        let ans;
+        do {
+            let sum = 0;
+            let i = 1;
+            let n = parseInt(prompt("Enter an integer: ", 100));
+
+            while(i <= n)
+            {
+                sum += i;
+                i++;
+            }
+            output.innerHTML += `the sum is (1-${n}): <b><span id="sp1">${sum}</span></b><br>`;
+            document.getElementById("sp1").style.color="blue";
+            ans = prompt("Repeat (y/n)?",  "y");
+            }
+        while(ans == "y")
+
+    </script>
+</body>
+</html>
